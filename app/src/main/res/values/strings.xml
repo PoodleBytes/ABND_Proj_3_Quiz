@@ -1,0 +1,24 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ABND_Proj_3_Quiz</string>
+    <string name="header">How much do you know?</string>
+    <string name="subHeader">Put your knowledge to the test!  Answer each question below.</string>
+    <string name="textEditor">enter your name here</string>
+    <string name="q1">1. What is the chemical formula for water?</string>
+    <string name="q1a1">1 hydrogen, 2 oxygen</string>
+    <string name="q1a2">2 hydrogen, 1 oxygen</string>
+    <string name="q1a3">1 hydrogen, 1 oxygen</string>
+    <string name="q2">2. Which numbers are powers of 2</string>
+    <string name="q2a1">8</string>
+    <string name="q2a2">12</string>
+    <string name="q2a3">64</string>
+    <string name="q2a4">96</string>
+    <string name="q3">Udacity Rocks!</string>
+    <string name="q3a1">true</string>
+    <string name="q3a2">false</string>
+    <string name="name">Name: <xliff:g id="name" example="You">%s</xliff:g></string>
+    <string name="your_score">You Scored: </string>
+    <string name="zero">0</string>
+    <string name="reset">Reset</string>
+    <string name="grade">Submit</string>
+</resources>
+
