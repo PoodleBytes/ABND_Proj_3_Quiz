@@ -35,7 +35,7 @@ import android.widget.Toast;
  *      1 -  Is  there  a way to get progressbar to in the titlebar (or a way so it remains visible?
  *      2 -  Wih there was a way to eliminate retyping most everything for q1Answer, q2Answer etc
  *           is there a way to do this in a loop?
- *           
+ *
  *
  *           Thanks!
  * */
@@ -126,11 +126,14 @@ public class MainActivity extends AppCompatActivity {
     public void submitQuiz(View view) {
         gradeQuiz();
     }
+
+
     /**
      * GRADE QUIZ AND UPDATE POINTS FOR EACH QUESTION
      * (allow user to know where there were right/wrong)
      */
     private void gradeQuiz() {
+        resetScore();       //reset points
         /**
          * Grade Q1
          **/
@@ -270,14 +273,22 @@ public class MainActivity extends AppCompatActivity {
     RESET
     */
     public void reset(View view) {
-        setContentView(R.layout.activity_main);     /**reload screen, resetting buttons */
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     /**lock screen in portrait mode */
-        numAnswered = 0;
+        resetAll();
+    }
+
+    private void resetScore() {
         grade = 0;
         q1Score = 0;
         q2Score = 0;
         q3Score = 0;
         q4Score = 0;
+
+    }
+
+    private void resetAll() {
+        setContentView(R.layout.activity_main);     /**reload screen, resetting buttons */
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     /**lock screen in portrait mode */
+        resetScore();
         q1AnswerID = 0;
         q4AnswerID = 0;
         q3text = "";
