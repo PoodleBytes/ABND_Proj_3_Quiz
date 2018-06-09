@@ -150,29 +150,12 @@ public class MainActivity extends AppCompatActivity {
         /**
          * Grade Q2
          */
-        int i = 0;            /** count number of checked boxes */
-        if (q2cb1Chk) {         /** correct */
-            q2Score += 25;
-            i++;
-        }
-        if (q2cb2Chk) {
-            q2Score += 0;
-            i++;
-        }
-        if (q2cb3Chk) {
-            q2Score += 25;
-            i++;
-        }
-        if (q2cb4Chk) {
-            q2Score += 0;
-            i++;
-        }
-        if (i > 0) {
-            q2Score = q2Score / i;
+        /** count number of checked boxes */
+        if (q2cb1Chk && !q2cb2Chk && q2cb3Chk && !q2cb4Chk) {         /** correct */
+            q2Score = 25;
         } else {
             q2Score = 0;
         }
-
 
         /**Q3 */
         EditText q3text = findViewById(R.id.q3a1); /**get ID of Q3 EditText */
