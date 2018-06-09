@@ -3,15 +3,13 @@ package com.example.android.anbd_proj_3_quiz;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/*
+/**
  *   Udacity Android Basics Nanodegree
  *   Project 3 - Simple Quiz
  *
@@ -34,7 +32,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    //declare variables that are used throughout app
+    /**
+     * declare variables that are used throughout app
+     */
     final int numQuestions = 4;
     int numAnswered = 0;
     int grade = 0;
@@ -42,157 +42,202 @@ public class MainActivity extends AppCompatActivity {
     int q2Score = 0;
     int q3Score = 0;
     int q4Score = 0;
+    int q1AnswerID = 0;
+    boolean q2cb1Chk = false;
+    boolean q2cb2Chk = false;
+    boolean q2cb3Chk = false;
+    boolean q2cb4Chk = false;
+    String q3text = "";
+    int q4AnswerID = 0;
+
+    boolean q1Answered = false;
+    boolean q2Answered = false;
+    boolean q3Answered = false;
+    boolean q4Answered = false;
+
     CheckBox q2Chk;
-    ProgressBar status;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     //keep screen in portrait mode
-
-        //initialize progress bar
-        status = findViewById(R.id.progress_bar);
-        status.setProgress(numAnswered);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     /** keep screen in portrait mode  */
     }
 
-    //evaluate question 1
+    /**
+     * question 1 OnClick
+     */
     public void q1Answer(View view) {
-        int checkedId = view.getId();
-        switch (checkedId) {   //The switch case will look at the checkedId
-            case R.id.q1rb1: //incorrect
-            case R.id.q1rb3: //incorrect
-                //Since all three of these buttons are incorrect, you can lump them together with one break message.
+        q1AnswerID = view.getId();
+    }
+
+    /**
+     * question 2  CheckBox 1 OnClick
+     * set q2cb1Chk  = isChecked
+     */
+    public void q2cb1Answer(View view) {
+        q2Chk = findViewById(view.getId());
+        q2cb1Chk = q2Chk.isChecked();
+    }
+
+    /**
+     * question 2  CheckBox 2 OnClick
+     */
+    public void q2cb2Answer(View view) {
+        q2Chk = findViewById(view.getId());
+        q2cb2Chk = q2Chk.isChecked();
+    }
+
+    /**
+     * question 2  CheckBox 3 OnClick
+     */
+    public void q2cb3Answer(View view) {
+        q2Chk = findViewById(view.getId());
+        q2cb3Chk = q2Chk.isChecked();
+    }
+
+    /**
+     * question 2  CheckBox 4 OnClick
+     */
+    public void q2cb4Answer(View view) {
+        q2Chk = findViewById(view.getId());
+        q2cb4Chk = q2Chk.isChecked();
+    }
+
+    /**
+     * question 4 onClick
+     */
+    public void q4Answer(View view) {
+        q4AnswerID = view.getId();
+    }
+
+    /**
+     * GRADE QUIZ AND UPDATE POINTS FOR EACH QUESTION
+     * (allow user to know where there were right/wrong)
+     */
+    public void gradeQuiz(View view) {
+        /**
+         * Grade Q1
+         **/
+        switch (q1AnswerID) {   /**The switch case will look at the checkedId */
+            case R.id.q1rb1: /**incorrect */
+            case R.id.q1rb3: /**incorrect */
                 q1Score = 0;
                 break;
-            case R.id.q1rb2: // correct
+            case R.id.q1rb2: /** correct */
                 q1Score = 25;
                 break;
         }
-        Log.v("q1Answer", " Q1 answer:" + q1Score);
-        updateNumAnswered();
-    }
 
-    //evaluate question 2
-    public void q2Answer(View view) {
-        int i = 0;            //count number of checked boxes
-        q2Chk = findViewById(R.id.q2cb1);  //y
-        if (q2Chk.isChecked()) {
+        /**
+         * Grade Q2
+         */
+        int i = 0;            /** count number of checked boxes */
+        if (q2cb1Chk) {         /** correct */
             q2Score += 25;
             i++;
         }
-        q2Chk = findViewById(R.id.q2cb2);  //y
-        if (q2Chk.isChecked()) {
+        if (q2cb2Chk) {
             q2Score += 0;
             i++;
         }
-        q2Chk = findViewById(R.id.q2cb3);  //y
-        if (q2Chk.isChecked()) {
+        if (q2cb3Chk) {
             q2Score += 25;
             i++;
         }
-        q2Chk = findViewById(R.id.q2cb4);  //y
-        if (q2Chk.isChecked()) {
+        if (q2cb4Chk) {
             q2Score += 0;
             i++;
         }
-        q2Score = q2Score / i;
-        Log.v("q2Answer", " Q2 answer:" + q2Score);
-        if (i == 1) {     //only increment numAnswered once
-            updateNumAnswered();
+        if (i > 0) {
+            q2Score = q2Score / i;
+        } else {
+            q2Score = 0;
         }
-    }
 
-    //evaluate question 3
-    public void q3Answer(View view) {
-        int checkedId = view.getId();
-        switch (checkedId) {   //The switch case will look at the checkedId
-            case R.id.q3rb1: //correct
-                q3Score = 25;
-                break;
-            case R.id.q3rb2: // incorrect
-                q3Score = 0;
-                break;
+
+        /**Q3 */
+        EditText q3text = findViewById(R.id.q3a1); /**get ID of Q3 EditText */
+        String q3txt = q3text.getText().toString();
+        String q3AnsTxt = getResources().getString(R.string.q3a1);
+        if (q3txt.equalsIgnoreCase(q3AnsTxt)) {
+            q3Score = 25;
+        } else {
+            q3Score = 0;
         }
-        Log.v("q3Answer", " Q3 answer:" + q3Score);
-        updateNumAnswered();
-    }
 
-    //evaluate question 4
-    public void q4Answer(View view) {
-        int checkedId = view.getId();
-        switch (checkedId) {   //The switch case will look at the checkedId
-            case R.id.q4rb1: //correct
+        /**Q4 */
+        switch (q4AnswerID) {   /** The switch case will look at the checkedId */
+            case R.id.q4rb1: /** correct */
                 q4Score = 25;
                 break;
-            case R.id.q4rb2: // incorrect
+            case R.id.q4rb2: /** incorrect */
                 q4Score = 0;
                 break;
         }
-        Log.v("q4Answer", " Q4 answer:" + q4Score);
-        updateNumAnswered();
+
+
+        /** calc grade */
+        grade = q1Score + q2Score + q3Score + q4Score;
+
+
+        /**notify user of results */
+        printScore();
     }
 
-    /*
-    GRADE QUIZ AND UPDATE POINTS FOR EACH QUESTION
-    (allow user to know where there were right/wrong)
-    */
-    public void gradeQuiz(View view) {
-        if (numAnswered < numQuestions) {   //are all questions answered
-            Toast.makeText(this, "You have " + (numQuestions - numAnswered) + " unanswered questions.", Toast.LENGTH_LONG).show();
-        } else {        //grade the test
-            //update score for each question
-            //Q1
-            TextView scoreView = findViewById(R.id.q1Points);
-            scoreView.setText(String.valueOf(q1Score));
-            if (q1Score < 25) {
-                scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
-            }
-            scoreView.setVisibility(View.VISIBLE);
-
-            //Q2
-            scoreView = findViewById(R.id.q2Points);
-            scoreView.setText(String.valueOf(q2Score));
-            if (q2Score < 25) {
-                scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
-            }
-            scoreView.setVisibility(View.VISIBLE);
-
-            //Q3
-            scoreView = findViewById(R.id.q3Points);
-            scoreView.setText(String.valueOf(q3Score));
-            if (q3Score < 25) {
-                scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
-            }
-            scoreView.setVisibility(View.VISIBLE);
-
-            //Q4
-            scoreView = findViewById(R.id.q4Points);
-            scoreView.setText(String.valueOf(q4Score));
-            if (q4Score < 25) {
-                scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
-            }
-            scoreView.setVisibility(View.VISIBLE);
-
-            //calc grade
-            grade = q1Score + q2Score + q3Score + q4Score;
-
-            //notify user of results
-            printScore();
-        }
-    }
-
-    /*
-        FORMAT AND DISPLAY SCORE
-    */
+    /**
+     * FORMAT AND DISPLAY SCORE
+     */
     public void printScore() {
 
-        // get username
+        /** get username */
         EditText nameField = findViewById(R.id.name);
         String name = nameField.getText().toString();
 
-        if (grade >= 100) {     //standard grading scale despite quiz only having 5 possible grades
+        /**
+         * display points for each question
+         */
+
+        /** Update Points for Q2 */
+        TextView scoreView = findViewById(R.id.q1Points);
+        String s = "#1: " + String.valueOf(q1Score);
+        scoreView.setText(s);
+        if (q1Score < 25) {
+            scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
+        }
+        scoreView.setVisibility(View.VISIBLE);
+
+        /** Update Points for Q2 */
+        scoreView = findViewById(R.id.q2Points);
+        s = "#2:  " + String.valueOf(q2Score);
+        scoreView.setText(s);
+        if (q2Score < 25) {
+            scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
+        }
+        scoreView.setVisibility(View.VISIBLE);
+
+        /** Update Points for Q3 */
+        scoreView = findViewById(R.id.q3Points);
+        s = "#3 " + String.valueOf(q3Score);
+        scoreView.setText(s);
+        if (q3Score < 25) {
+            scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
+        }
+        scoreView.setVisibility(View.VISIBLE);
+
+        /** Update Points for Q4 */
+        scoreView = findViewById(R.id.q4Points);
+        s = "#4: " + String.valueOf(q4Score);
+        scoreView.setText(s);
+        if (q4Score < 25) {
+            scoreView.setTextColor(this.getResources().getColor(R.color.colorAccent));
+        }
+        scoreView.setVisibility(View.VISIBLE);
+
+
+        /**standard grading scale despite quiz only having 5 possible grades */
+        if (grade >= 100) {
             Toast.makeText(this, "Congratulations! " + name + ", You scored 100%.  Perfect!", Toast.LENGTH_LONG).show();
         } else if (grade >= 90) {
             Toast.makeText(this, "Awesome! " + name + ", You got an A. (" + grade + ")", Toast.LENGTH_LONG).show();
@@ -211,23 +256,27 @@ public class MainActivity extends AppCompatActivity {
     RESET
     */
     public void reset(View view) {
-        setContentView(R.layout.activity_main);     //reload screen, resetting buttons
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     //lock screen in portrait mode
+        setContentView(R.layout.activity_main);     /**reload screen, resetting buttons */
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     /**lock screen in portrait mode */
         numAnswered = 0;
         grade = 0;
         q1Score = 0;
         q2Score = 0;
         q3Score = 0;
         q4Score = 0;
-        status = findViewById(R.id.progress_bar);
-        status.setProgress(numAnswered);
-    } //end reset
+        q1AnswerID = 0;
+        q4AnswerID = 0;
+        q3text = "";
+        q2cb1Chk = false;
+        q2cb2Chk = false;
+        q2cb3Chk = false;
+        q2cb4Chk = false;
 
-    /*
-    TRACK PROGRESS
-     */
-    private void updateNumAnswered() {
-        numAnswered++;
-        status.setProgress(numAnswered);
-    }
+        q1Answered = false;
+        q2Answered = false;
+        q3Answered = false;
+        q4Answered = false;
+
+    } /**end reset */
+
 }

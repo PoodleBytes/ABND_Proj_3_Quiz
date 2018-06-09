@@ -12,13 +12,16 @@
     <string name="q2a2">12</string>
     <string name="q2a3">64</string>
     <string name="q2a4">96</string>
-    <string name="q3">Udacity Rocks!</string>
-    <string name="q3a1">true</string>
-    <string name="q3a2">false</string>
+    <string name="q3">3. _______ and Luigi drive Karts</string>
+    <string name="q3a1">mario</string>
+    <string name="q4a1">True</string>
+    <string name="q4a2">False</string>
     <string name="name">Name: <xliff:g id="name" example="You">%s</xliff:g></string>
     <string name="your_score">You Scored: </string>
     <string name="zero">0</string>
     <string name="reset">Reset</string>
     <string name="grade">Submit</string>
+    <string name="udacity">Udacity</string>
+    <string name="rocks">Rocks</string>
 </resources>
 

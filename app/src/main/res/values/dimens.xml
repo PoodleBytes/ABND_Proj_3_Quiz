@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="headerText">12sp</dimen>
+    <dimen name="pointsText">18sp</dimen>
     <dimen name="appMargin">8dp</dimen>
     <dimen name="appPadding">4dp</dimen>
-    <dimen name="headerText">12sp</dimen>
-    <dimen name="appMarginLarge">12sp</dimen>
-    <dimen name="pointsText">18sp</dimen>
+    <dimen name="appMarginLarge">12dp</dimen>
+    <dimen name="appMarginXLarge">48dp</dimen>
     <dimen name="questionImage">48dp</dimen>
 </resources>
