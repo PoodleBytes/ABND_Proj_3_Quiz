@@ -13,18 +13,29 @@ import android.widget.Toast;
  *   Udacity Android Basics Nanodegree
  *   Project 3 - Simple Quiz
  *
+ *      Submission 2
+ *
  *       PoodleBytes
- *       2018.06.07
+ *       2018.06.08
+ *
+ * Corrected per Udacity review
+ * - added EditText box for grading
+ * - CheckBox div/0 error
+ *  - Scoring Correctly
+ *  - attempted to use JavaDoc-style comments
+ *  - correct lengths to dp
+ *
+ * There are many warnings about dangling JavaDoc comments plan to do better in next project
+ *
  *
  * FEATURES/NOTES
  *   used ProgressBar
  *   'inspired' Code from my quiz proj (intro android), github/Tia-C and Google.com
  * Question  -
  *      1 -  Is  there  a way to get progressbar to in the titlebar (or a way so it remains visible?
- *      2 -  I know private is preferred but my app would crash if I made the methods private
- *           Is there a way to do this w/or do I need an onClick listener?
- *      3 -  I don't like how I have to retype most everything for q1Answer, q2Answer etc
+ *      2 -  Wih there was a way to eliminate retyping most everything for q1Answer, q2Answer etc
  *           is there a way to do this in a loop?
+ *           
  *
  *           Thanks!
  * */
@@ -112,11 +123,14 @@ public class MainActivity extends AppCompatActivity {
         q4AnswerID = view.getId();
     }
 
+    public void submitQuiz(View view) {
+        gradeQuiz();
+    }
     /**
      * GRADE QUIZ AND UPDATE POINTS FOR EACH QUESTION
      * (allow user to know where there were right/wrong)
      */
-    public void gradeQuiz(View view) {
+    private void gradeQuiz() {
         /**
          * Grade Q1
          **/

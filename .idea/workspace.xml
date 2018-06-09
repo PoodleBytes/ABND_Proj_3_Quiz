@@ -13,19 +13,12 @@
     <list default="true" id="17cdcb51-9b4f-432c-8afd-baf0aa15eec3" name="Default" comment="Submission 2 &#10;Corrected per Udacity review&#10; - added EditText box for grading&#10; - CheckBox div/0 error&#10; - Scoring Correctly&#10; - attempted to use JavaDoc-style comments&#10; - correct lengths to dp&#10; &#10; * There are many warnings about dangling JavaDoc comments plan to do better in next project &#10; nested weights being performance issue">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,14 +50,16 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="229" column="48" lean-forward="true" selection-start-line="229" selection-start-column="48" selection-end-line="229" selection-end-column="48" />
+              <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2012#2013#0" expanded="true" />
-                <element signature="e#2053#2054#0" expanded="true" />
-                <element signature="e#2903#2904#0" expanded="true" />
-                <element signature="e#2944#2945#0" expanded="true" />
-                <element signature="e#4217#4256#0" expanded="true" />
+                <element signature="e#2183#2184#0" expanded="true" />
+                <element signature="e#2224#2225#0" expanded="true" />
+                <element signature="e#3074#3075#0" expanded="true" />
+                <element signature="e#3115#3116#0" expanded="true" />
+                <element signature="e#3156#3157#0" expanded="true" />
+                <element signature="e#3183#3184#0" expanded="true" />
+                <element signature="e#4447#4486#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +71,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="170" column="24" lean-forward="true" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="279" column="49" lean-forward="false" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="49" />
               <folding>
                 <element signature="e#696#714#0" expanded="true" />
                 <element signature="e#740#756#0" expanded="true" />
@@ -123,10 +118,10 @@
                 <element signature="e#11268#11287#0" expanded="true" />
                 <element signature="e#11828#11846#0" expanded="true" />
                 <element signature="e#11888#11906#0" expanded="true" />
-                <element signature="e#11980#11995#0" expanded="true" />
-                <element signature="e#12312#12330#0" expanded="true" />
-                <element signature="e#12372#12390#0" expanded="true" />
-                <element signature="e#12460#12475#0" expanded="true" />
+                <element signature="e#11981#11996#0" expanded="true" />
+                <element signature="e#12313#12331#0" expanded="true" />
+                <element signature="e#12373#12391#0" expanded="true" />
+                <element signature="e#12461#12476#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2194,9 +2189,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2565,7 +2560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528386352293</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Submission 2 &#10;Corrected per Udacity review&#10; - added EditText box for grading&#10; - CheckBox div/0 error&#10; - Scoring Correctly&#10; - attempted to use JavaDoc-style comments&#10; - correct lengths to dp&#10; &#10; * There are many warnings about dangling JavaDoc comments plan to do better in next project &#10; nested weights being performance issue">
+      <created>1528503089329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528503089329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2580,12 +2582,12 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2649,12 +2651,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java</url>
-          <line>148</line>
+          <line>162</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java</url>
-          <line>160</line>
+          <line>174</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -2670,11 +2672,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#4217#4256#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
+            <element signature="e#3156#3157#0" expanded="true" />
+            <element signature="e#3183#3184#0" expanded="true" />
+            <element signature="e#4447#4486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2731,10 +2735,10 @@
             <element signature="e#11268#11287#0" expanded="true" />
             <element signature="e#11828#11846#0" expanded="true" />
             <element signature="e#11888#11906#0" expanded="true" />
-            <element signature="e#11980#11995#0" expanded="true" />
-            <element signature="e#12312#12330#0" expanded="true" />
-            <element signature="e#12372#12390#0" expanded="true" />
-            <element signature="e#12460#12475#0" expanded="true" />
+            <element signature="e#11981#11996#0" expanded="true" />
+            <element signature="e#12313#12331#0" expanded="true" />
+            <element signature="e#12373#12391#0" expanded="true" />
+            <element signature="e#12461#12476#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2769,11 +2773,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#4217#4256#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
+            <element signature="e#3156#3157#0" expanded="true" />
+            <element signature="e#3183#3184#0" expanded="true" />
+            <element signature="e#4447#4486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2830,10 +2836,10 @@
             <element signature="e#11268#11287#0" expanded="true" />
             <element signature="e#11828#11846#0" expanded="true" />
             <element signature="e#11888#11906#0" expanded="true" />
-            <element signature="e#11980#11995#0" expanded="true" />
-            <element signature="e#12312#12330#0" expanded="true" />
-            <element signature="e#12372#12390#0" expanded="true" />
-            <element signature="e#12460#12475#0" expanded="true" />
+            <element signature="e#11981#11996#0" expanded="true" />
+            <element signature="e#12313#12331#0" expanded="true" />
+            <element signature="e#12373#12391#0" expanded="true" />
+            <element signature="e#12461#12476#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2868,11 +2874,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#4217#4256#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
+            <element signature="e#3156#3157#0" expanded="true" />
+            <element signature="e#3183#3184#0" expanded="true" />
+            <element signature="e#4447#4486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2929,10 +2937,10 @@
             <element signature="e#11268#11287#0" expanded="true" />
             <element signature="e#11828#11846#0" expanded="true" />
             <element signature="e#11888#11906#0" expanded="true" />
-            <element signature="e#11980#11995#0" expanded="true" />
-            <element signature="e#12312#12330#0" expanded="true" />
-            <element signature="e#12372#12390#0" expanded="true" />
-            <element signature="e#12460#12475#0" expanded="true" />
+            <element signature="e#11981#11996#0" expanded="true" />
+            <element signature="e#12313#12331#0" expanded="true" />
+            <element signature="e#12373#12391#0" expanded="true" />
+            <element signature="e#12461#12476#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3024,8 +3032,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="170" column="24" lean-forward="true" selection-start-line="170" selection-start-column="24" selection-end-line="170" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="279" column="49" lean-forward="false" selection-start-line="279" selection-start-column="49" selection-end-line="279" selection-end-column="49" />
           <folding>
             <element signature="e#696#714#0" expanded="true" />
             <element signature="e#740#756#0" expanded="true" />
@@ -3071,10 +3079,10 @@
             <element signature="e#11268#11287#0" expanded="true" />
             <element signature="e#11828#11846#0" expanded="true" />
             <element signature="e#11888#11906#0" expanded="true" />
-            <element signature="e#11980#11995#0" expanded="true" />
-            <element signature="e#12312#12330#0" expanded="true" />
-            <element signature="e#12372#12390#0" expanded="true" />
-            <element signature="e#12460#12475#0" expanded="true" />
+            <element signature="e#11981#11996#0" expanded="true" />
+            <element signature="e#12313#12331#0" expanded="true" />
+            <element signature="e#12373#12391#0" expanded="true" />
+            <element signature="e#12461#12476#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3082,14 +3090,16 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/anbd_proj_3_quiz/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="229" column="48" lean-forward="true" selection-start-line="229" selection-start-column="48" selection-end-line="229" selection-end-column="48" />
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2053#2054#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#2944#2945#0" expanded="true" />
-            <element signature="e#4217#4256#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2224#2225#0" expanded="true" />
+            <element signature="e#3074#3075#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
+            <element signature="e#3156#3157#0" expanded="true" />
+            <element signature="e#3183#3184#0" expanded="true" />
+            <element signature="e#4447#4486#0" expanded="true" />
           </folding>
         </state>
       </provider>

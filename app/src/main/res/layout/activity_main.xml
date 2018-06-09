@@ -275,7 +275,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="@dimen/appMargin"
                 android:layout_marginTop="@dimen/appMargin"
-                android:onClick="gradeQuiz"
+                android:onClick="submitQuiz"
                 android:text="@string/grade"
                 android:textAlignment="center" />
 
